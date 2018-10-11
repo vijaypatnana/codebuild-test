@@ -9,10 +9,11 @@ phases:
     commands:
       - echo Nothing to do in the pre_build phase...
       - pwd
+      - arachni --version
   build:
     commands:
       - echo Build started on `date`
-      - docker --version
+      - gauntlt 
   post_build:
     commands:
       - echo Build completed on `date`
