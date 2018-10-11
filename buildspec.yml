@@ -13,7 +13,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - gauntlt 
+      - arachni --checks=xss --scope-directory-depth-limit=1 https://www.google.com 
   post_build:
     commands:
       - echo Build completed on `date`
